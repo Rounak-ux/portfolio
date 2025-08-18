@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rounak Sharma — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Rounak<span class="dot">.</span></div>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="avatar">
+          <img src="assets/profile.jpg" alt="Portrait of Rounak Sharma" />
+        </div>
+        <div>
+          <h1 class="title">Hi, I'm Rounak Sharma</h1>
+          <p class="subtitle">Electronics & Embedded Systems enthusiast — building smart hardware with Arduino/ESP, sensors, and clean UI dashboards.</p>
+          <div class="badges">
+            <span class="badge"><i class="fa-solid fa-microchip"></i> Arduino • ESP32</span>
+            <span class="badge"><i class="fa-solid fa-bolt"></i> Power & Drives</span>
+            <span class="badge"><i class="fa-solid fa-satellite-dish"></i> IoT & GPS</span>
+            <span class="badge"><i class="fa-solid fa-code"></i> C/C++ • Python</span>
+          </div>
+          <div class="row">
+            <a class="btn" href="#contact"><i class="fa-regular fa-paper-plane"></i> Hire Me</a>
+            <a class="btn ghost" href="#projects"><i class="fa-regular fa-folder-open"></i> See Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <div class="card">
+        <p>I’m an engineering student passionate about embedded systems, control, and clean UI. Recent work includes GPS‑guided robots, motor control, and instrumentation (CT/PT, ADCs, Kalman filtering). I love turning real‑world signals into reliable, usable data.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="card">
+        <div class="badges">
+          <span class="badge">Arduino / ESP32</span>
+          <span class="badge">PCB Basics</span>
+          <span class="badge">Sensors & Actuators</span>
+          <span class="badge">Power Electronics</span>
+          <span class="badge">MATLAB / Simulink</span>
+          <span class="badge">Python</span>
+          <span class="badge">AutoCAD Basics</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid">
+        <article class="card project">
+          <img src="https://picsum.photos/seed/gps/800/500" alt="GPS car demo">
+          <h3>Location‑Locked Autonomous Car</h3>
+          <p>ESP32 + GPS + motor driver. Locks a destination and auto‑navigates with PID speed control.</p>
+          <div class="row">
+            <a class="btn ghost" href="#"><i class="fa-brands fa-github"></i> Code</a>
+            <a class="btn ghost" href="#"><i class="fa-regular fa-image"></i> Demo</a>
+          </div>
+        </article>
+        <article class="card project">
+          <img src="https://picsum.photos/seed/hvdc/800/500" alt="Power electronics project">
+          <h3>HVDC Converter Mini‑Rig</h3>
+          <p>Built controlled rectifier demo with snubbers and gate‑drive timing experiments.</p>
+          <div class="row">
+            <a class="btn ghost" href="#"><i class="fa-brands fa-github"></i> Code</a>
+            <a class="btn ghost" href="#"><i class="fa-regular fa-image"></i> Demo</a>
+          </div>
+        </article>
+        <article class="card project">
+          <img src="https://picsum.photos/seed/instrument/800/500" alt="Instrument system">
+          <h3>Smart Energy Meter</h3>
+          <p>CT/PT sensors with calibration and a web dashboard; MQTT to the cloud.</p>
+          <div class="row">
+            <a class="btn ghost" href="#"><i class="fa-brands fa-github"></i> Code</a>
+            <a class="btn ghost" href="#"><i class="fa-regular fa-image"></i> Demo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card">
+        <form id="contact-form">
+          <div>
+            <label for="name">Your Name</label>
+            <input id="name" name="name" placeholder="e.g., Jane Doe" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <div class="row">
+            <button class="btn" type="submit"><i class="fa-regular fa-paper-plane"></i> Send</button>
+            <a class="btn ghost" href="mailto:youremail@example.com"><i class="fa-regular fa-envelope"></i> Email Me</a>
+          </div>
+        </form>
+        <div>
+          <p><strong>Based in:</strong> India</p>
+          <p><strong>Email:</strong> youremail@example.com</p>
+          <p><strong>LinkedIn:</strong> linkedin.com/in/rounak-sharma</p>
+          <p><strong>GitHub:</strong> github.com/rounak-sharma</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Rounak Sharma • Built with love and caffeine.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
